@@ -89,6 +89,7 @@ if show_q11:
     sns.boxplot(x='subject', y='num_subscribers', data=data, ax=ax)
     ax.set_xlabel("Subject")
     ax.set_ylabel("Number of subscribers")
+    plt.xticks(rotation = 'vertical')
     st.pyplot(fig)
 show_q12 = st.checkbox("Distribution of number of subscribers")
 if show_q12:
@@ -100,10 +101,10 @@ if show_q12:
 show_q13 = st.checkbox("Distribution of course prices")
 if show_q13:
     fig, ax = plt.subplots()
-    sns.histplot(y='price', data=data, bins=20, ax=ax)
+    sns.histplot(x='price', data=data, bins=20, ax=ax)
     ax.set_xlabel("Price")
     ax.set_ylabel("Number of courses")
-    #plt.xticks(rotation = 'vertical')
+    plt.xticks(rotation = 'vertical')
     st.pyplot(fig)
 show_q14 = st.checkbox("Number of paid and free courses")
 if show_q14:
