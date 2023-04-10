@@ -121,8 +121,10 @@ if show_q15:
     ax.set_xlabel("Number of courses")
     ax.set_ylabel("Subject")
     st.pyplot(fig)
-    
-
+show_q16 = st.checkbox("Show subject with the minimum number of courses?")
+if show_q16:
+    st.write("Subject with the minimum number of courses:")
+    st.write(data.subject.value_counts().idxmin())
 
 
 
