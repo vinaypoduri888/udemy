@@ -15,11 +15,9 @@ names = [ "P.VINAY"]
 st.title("Exploratory Data Analysis on Udemy Courses Dataset")
 # Add the names to the sidebar
 st.sidebar.title("Developed by:")
+st.sidebar.write("vinay")
 
-for name in names:
-    st.sidebar.write(name)
-st.sidebar.title("Under The Guidance of :")
-st.sidebar.write("Dr.Bomma.Ramakrishna")
+
 # File upload
 uploaded_file = st.file_uploader("Choose a Udemy Courses Dataset csv")
 if uploaded_file is not None:
