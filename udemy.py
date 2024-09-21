@@ -11,7 +11,7 @@ logo = Image.open('logo (1).png')
 st.set_page_config(page_title="udemy  EDA", page_icon=":bar_chart:", layout="wide")
 st.image(logo)
 # Define the list of names
-names = ["G.HARSHINI", "P.VINAY", "B.SATISH KUMAR","K.VENKATA LAKSHMI","V.CHANDRIKA YESASWINI","P.RAKESH","G.VENKATA VINAY"]
+names = [ "P.VINAY"]
 st.title("Exploratory Data Analysis on Udemy Courses Dataset")
 # Add the names to the sidebar
 st.sidebar.title("Project Team Members:")
