@@ -14,7 +14,7 @@ st.image(logo)
 names = [ "P.VINAY"]
 st.title("Exploratory Data Analysis on Udemy Courses Dataset")
 # Add the names to the sidebar
-st.sidebar.title("Project Team Members:")
+st.sidebar.title("Developed by:")
 
 for name in names:
     st.sidebar.write(name)
